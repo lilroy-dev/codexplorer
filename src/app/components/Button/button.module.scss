@@ -1,0 +1,53 @@
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &.primary {
+    background-color: #0070f3;
+  }
+
+  &.secondary {
+    background-color: #6c757d;
+  }
+
+  &.danger {
+    background-color: #dc3545;
+  }
+
+  &.success {
+    background-color: #28a745;
+  }
+
+  &.link {
+    background: none;
+    color: #0070f3;
+    text-decoration: underline;
+  }
+
+  &.small {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  &.medium {
+    font-size: 14px;
+  }
+
+  &.large {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+
+  .icon {
+    margin-right: 5px; // Расстояние между иконкой и текстом
+  }
+
+  &:hover {
+    opacity: 0.8; // Эффект при наведении
+  }
+}

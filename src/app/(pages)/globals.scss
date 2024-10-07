@@ -1,0 +1,84 @@
+:root {
+  --ff: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --color-text: #171717;
+  --color-link: #3b49df;
+}
+
+/* Сброс полей, отступов и границ для всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Установим более предсказуемую высоту для элементов с процентными размерами */
+html {
+  height: 100%;
+}
+
+/* Отменяем стиль списков */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Сброс шрифтов */
+body {
+  line-height: 1.5;
+  font-family: var(--ff);
+  -webkit-font-smoothing: antialiased; /* Сглаживание текста для WebKit-браузеров */
+  -moz-osx-font-smoothing: grayscale;  /* Сглаживание текста для Firefox на Mac */
+}
+
+/* Убираем стили ссылок */
+a {
+  text-decoration: none;
+  color: var(--color-link);
+  font-family: inherit;
+}
+
+/* Отменяем стили кнопок */
+button,
+input {
+  background: none;
+  border: none;
+  font: inherit; /* Наследуем шрифты от родителя */
+  cursor: pointer;
+}
+
+/* Убираем границы у изображений и делают их адаптивными */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Убираем фокусное выделение у кнопок и ссылок, для лучшего UX */
+button:focus,
+a:focus {
+  outline: none;
+}
+
+/* Сброс таблиц */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Убираем обводку полей ввода на фокус */
+input:focus {
+  outline: none;
+}
+
+/* Обнуляем стили цитат */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+}

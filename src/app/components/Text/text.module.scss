@@ -1,0 +1,28 @@
+.text {
+  margin: 0;
+  &:not(:last-child) {
+    &.small {
+      margin-bottom: 14px;
+    }
+
+    &.medium {
+      margin-bottom: 16px;
+    }
+
+    &.large {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.small {
+  font-size: 14px;
+}
+
+.medium {
+  font-size: 16px;
+}
+
+.large {
+  font-size: 20px;
+}
