@@ -23,12 +23,6 @@
     background-color: #28a745;
   }
 
-  &.link {
-    background: none;
-    color: #0070f3;
-    text-decoration: underline;
-  }
-
   &.small {
     font-size: 12px;
     padding: 5px 10px;
@@ -44,10 +38,10 @@
   }
 
   .icon {
-    margin-right: 5px; // Расстояние между иконкой и текстом
+    margin-right: 5px;
   }
 
   &:hover {
-    opacity: 0.8; // Эффект при наведении
+    opacity: 0.8;
   }
 }

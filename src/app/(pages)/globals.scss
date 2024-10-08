@@ -3,6 +3,8 @@
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --color-text: #171717;
   --color-link: #3b49df;
+  --color-body: rgb(245, 245, 245);
+  --color-box: #ffffff;
 }
 
 /* Сброс полей, отступов и границ для всех элементов */
@@ -29,12 +31,13 @@ body {
   font-family: var(--ff);
   -webkit-font-smoothing: antialiased; /* Сглаживание текста для WebKit-браузеров */
   -moz-osx-font-smoothing: grayscale;  /* Сглаживание текста для Firefox на Mac */
+  background-color: var(--color-body);
 }
 
 /* Убираем стили ссылок */
 a {
   text-decoration: none;
-  color: var(--color-link);
+  color: inherit;
   font-family: inherit;
 }
 
@@ -81,4 +84,8 @@ blockquote::after,
 q::before,
 q::after {
   content: '';
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-bottom: 5px;
 }

@@ -1,20 +1,17 @@
 "use client";
 import React from "react";
-import Link from "next/link";
 import styles from "./button.module.scss";
 
 interface ButtonProps {
-    href?: string;
     onClick?: () => void;
     children: React.ReactNode;
     className?: string;
-    variant?: "primary" | "secondary" | "danger" | "success" | "link";
+    variant?: "primary" | "secondary" | "danger" | "success";
     size?: "small" | "medium" | "large";
-    icon?: React.ReactNode; // Для иконки
+    icon?: React.ReactNode;
 }
 
 export const Button: React.FC<ButtonProps> = ({
-                                                  href,
                                                   onClick,
                                                   children,
                                                   className = "",
@@ -23,16 +20,6 @@ export const Button: React.FC<ButtonProps> = ({
                                                   icon,
                                               }) => {
     const classes = `${styles.button} ${styles[variant]} ${styles[size]} ${className}`;
-
-    if (href) {
-        return (
-            <Link href={href} passHref>
-                {icon && <span className={styles.icon}>{icon}</span>}
-                {children}
-            </Link>
-        );
-    }
-
     return (
         <button className={classes} onClick={onClick}>
             {icon && <span className={styles.icon}>{icon}</span>}
