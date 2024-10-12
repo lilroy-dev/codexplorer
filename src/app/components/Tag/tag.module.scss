@@ -1,0 +1,95 @@
+.tag {
+  padding: 4px 7px;
+  color: var(--color-tag);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease, border 0.3s ease;
+
+  span {
+    color: inherit;
+  }
+
+  &.html span {
+    color: rgba(227, 79, 38, 1);
+  }
+
+  &.html:hover {
+    background-color: rgba(227, 79, 38, 0.2);
+    border: 1px solid rgba(227, 79, 38, 1);
+  }
+
+  &.css span {
+    color: rgba(41, 101, 241, 1);
+  }
+
+  &.css:hover {
+    background-color: rgba(41, 101, 241, 0.2);
+    border: 1px solid rgba(41, 101, 241, 1);
+  }
+
+  &.js span {
+    color: rgba(240, 219, 79, 1);
+  }
+
+  &.js:hover {
+    background-color: rgba(240, 219, 79, 0.2);
+    border: 1px solid rgba(240, 219, 79, 1);
+  }
+
+  &.nj span {
+    color: rgba(60, 135, 58, 1);
+  }
+
+  &.nj:hover {
+    background-color: rgba(60, 135, 58, 0.2);
+    border: 1px solid rgba(60, 135, 58, 1);
+  }
+
+  &.ts span {
+    color: rgba(0, 122, 204, 1);
+  }
+
+  &.ts:hover {
+    background-color: rgba(0, 122, 204, 0.2);
+    border: 1px solid rgba(0, 122, 204, 1);
+  }
+
+  &.react span {
+    color: rgba(97, 218, 251, 1);
+  }
+
+  &.react:hover {
+    background-color: rgba(97, 218, 251, 0.2);
+    border: 1px solid rgba(97, 218, 251, 1);
+  }
+
+  &.vue span {
+    color: rgba(66, 184, 131, 1);
+  }
+
+  &.vue:hover {
+    background-color: rgba(66, 184, 131, 0.2);
+    border: 1px solid rgba(66, 184, 131, 1);
+  }
+
+  &.docker span {
+    color: rgba(36, 150, 237, 1);
+  }
+
+  &.docker:hover {
+    background-color: rgba(36, 150, 237, 0.2);
+    border: 1px solid rgba(36, 150, 237, 1);
+  }
+
+  &.default span {
+    color: rgba(153, 153, 153, 1);
+  }
+
+  &.default:hover {
+    background-color: rgba(153, 153, 153, 0.2);
+    border: 1px solid rgba(153, 153, 153, 1);
+  }
+}

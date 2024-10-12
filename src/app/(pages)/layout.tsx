@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 import React from "react";
+import {HeaderPage} from "@/app/widgets";
 
 export const metadata: Metadata = {
   title: "Code blog",
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body>
+        <HeaderPage/>
         {children}
       </body>
     </html>

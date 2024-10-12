@@ -7,7 +7,7 @@ interface ButtonProps {
     children: React.ReactNode;
     className?: string;
     variant?: "primary" | "secondary" | "danger" | "success";
-    size?: "small" | "medium" | "large";
+    size?: "small" | "medium" | "large" | "icon";
     icon?: React.ReactNode;
 }
 

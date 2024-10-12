@@ -1,14 +1,18 @@
 'use client';
-import styles from "./page.module.css";
-import {Button, Heading, ALink, Spacer, Text} from "@/app/components";
-import {PostItem} from "@/app/widgets";
+import { PostItem, PostListItems } from "@/app/widgets";
+import { Container } from "@/app/components";
 
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <PostItem/>
+    <div>
+      <main>
+          <Container>
+              <PostListItems>
+                  <PostItem/>
+                  <PostItem/>
+              </PostListItems>
+          </Container>
       </main>
     </div>
   );

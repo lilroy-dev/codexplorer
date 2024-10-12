@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 600px;
+  max-width: 100%;
+}
+
+.input {
+  flex: 1;
+  padding: 10px 40px;
+  border: 1px solid rgba(204, 204, 204, 0.6);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-text);
+}

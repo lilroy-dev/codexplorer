@@ -1,0 +1,41 @@
+.btnToggle {
+  line-height: 0;
+}
+
+svg.toggleTheme {
+  --theme-toggle-duration: .4s;
+  fill: var(--color-text);
+}
+
+svg.toggleTheme :first-child path {
+  transition-duration: calc(var(--theme-toggle-duration) * .6);
+  transition-property: transform,d;
+  transition-timing-function: cubic-bezier(0,0,.5,1)
+}
+
+svg.toggleTheme g circle,svg.toggleTheme g path {
+  transform-origin: center;
+  transition: transform calc(var(--theme-toggle-duration) * .65) cubic-bezier(0,0,0,1.25) calc(var(--theme-toggle-duration) * .35)
+}
+
+svg.toggleTheme.moon g circle {
+  transform: scale(1.4);
+  transition-delay: 0s
+}
+
+svg.toggleTheme.moon g path {
+  transform: scale(.75);
+  transition-delay: 0s
+}
+
+svg.toggleTheme.moon :first-child path {
+  d: path("M-9 3h25a1 1 0 0017 13v30H0Z");
+  transition-delay: calc(var(--theme-toggle-duration) * .4);
+  transition-timing-function: cubic-bezier(0,0,0,1.25)
+}
+
+@supports not (d:path("")) {
+  svg.toggleTheme.moon :first-child path {
+    transform: translate3d(-9px,14px,0)
+  }
+}

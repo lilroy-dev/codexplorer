@@ -2,9 +2,21 @@
   --ff: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --color-text: #171717;
+  --color-title: #171717;
   --color-link: #3b49df;
   --color-body: rgb(245, 245, 245);
   --color-box: #ffffff;
+  --color-tag: #404040;
+
+  --container-width: 1200px;
+}
+
+[data-theme='dark'] {
+  --color-text: #c2c7d0;
+  --color-title: #fff;
+  --color-box: #171717;
+  --color-body: #171717;
+  --color-tag: #c2c7d0;
 }
 
 /* Сброс полей, отступов и границ для всех элементов */
@@ -32,6 +44,7 @@ body {
   -webkit-font-smoothing: antialiased; /* Сглаживание текста для WebKit-браузеров */
   -moz-osx-font-smoothing: grayscale;  /* Сглаживание текста для Firefox на Mac */
   background-color: var(--color-body);
+  color: var(--color-text);
 }
 
 /* Убираем стили ссылок */
@@ -39,6 +52,7 @@ a {
   text-decoration: none;
   color: inherit;
   font-family: inherit;
+  cursor: pointer;
 }
 
 /* Отменяем стили кнопок */
@@ -47,6 +61,11 @@ input {
   background: none;
   border: none;
   font: inherit; /* Наследуем шрифты от родителя */
+  cursor: pointer;
+  color: inherit;
+}
+
+button {
   cursor: pointer;
 }
 
@@ -58,9 +77,15 @@ img {
 }
 
 /* Убираем фокусное выделение у кнопок и ссылок, для лучшего UX */
-button:focus,
-a:focus {
+button:focus-visible,
+a:focus-visible {
   outline: none;
+}
+
+a:focus-visible,
+button:focus-visible{
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
+  border-radius: 4px;
 }
 
 /* Сброс таблиц */
@@ -88,4 +113,6 @@ q::after {
 
 h1,h2,h3,h4,h5,h6 {
   margin-bottom: 5px;
+  line-height: 130%;
+  color: var(--color-title);
 }

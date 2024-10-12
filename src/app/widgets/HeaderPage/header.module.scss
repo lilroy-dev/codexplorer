@@ -1,0 +1,13 @@
+.header {
+  background-color: var(--color-box);
+  padding: 10px 0;
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px 0px;
+}
+
+.headerLine {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+}

@@ -3,3 +3,8 @@ export { Heading } from './Heading';
 export { Spacer } from './Spacer';
 export { Button } from './Button';
 export { ALink } from './Link';
+export { Tag } from './Tag';
+export { Container } from './Container';
+export { Logo } from './Logo';
+export { Icon } from './Icon';
+export { BoxContent } from './BoxContent';
